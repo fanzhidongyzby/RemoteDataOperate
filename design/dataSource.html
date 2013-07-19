@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>选择数据源</title>
+<link rel="stylesheet" type="text/css" href="./src/common.css">
+</head>
+<body>
+<div class="top"></div>
+<div class="head">
+	<div class="head_left"></div>
+    <div class="head_middle"><font class="head_txt">&nbsp;选择数据源</font></div>
+    <div class="head_right"></div>
+</div>
+<script language="javascript" type="text/javascript">
+function validate()
+{
+	if(document.all.host.value==""
+	||document.all.port.value==""
+	||document.all.dbname.value==""
+	||document.all.user.value==""
+	||document.all.pswd.value==""
+	||document.all.srcPath.value=="")
+	{
+		alert("请补充缺失的登录信息。");
+		return false;
+	}
+	else
+		return true;
+}
+</script>
+<div class="main" >
+<table height="20"></table>
+<FORM id="form1" METHOD="post" ACTION="./dataSource.html" ENCTYPE="multipart/form-data" onsubmit="return validate();">
+<INPUT TYPE="file" id ="upload" style="visibility:hidden; height:0; width:0;" onchange="document.all.srcPath.value=document.all.upload.value;"/>
+	<table width="80%" align="center">
+		<tr>
+		<td class="tbleft">数据库服务器地址：</td><td class="tbright"><input type="text" id="host" value="127.0.0.1"/></td>
+		</tr>
+		<tr>
+		<td class="tbleft">数据库服务器端口号：</td><td class="tbright"><input type="text" id="port" value="3306"/></td>
+		</tr>
+		<tr>
+		<td class="tbleft">数据库名称：</td><td class="tbright"><input type="text" id="dbname" value="ok"/></td>
+		</tr>
+		<tr>
+		<td class="tbleft">用户名：</td><td class="tbright"><input type="text" id="user" value="root"/></td>
+		</tr>
+		<tr>
+		<td class="tbleft">密码：</td><td class="tbright"><input type="password" id="pswd" value="admin"/></td>
+		</tr>
+		<tr>
+		<td class="tbleft">数据源文件：</td><td class="tbright"><input type="text" readonly="true" id="srcPath" value=""/>
+		<input type="button" id="getPath" class="txt" value="浏览" onclick="document.all.upload.click();"/>
+		</td>
+		</tr>
+	</table>
+	<div align="center">
+		<button type="submit" class="button"><font class="btn_txt" style=" margin-left:-10px;">写入数据</font></button>
+	</div>
+	</FORM>
+	<br />
+	<div class="bottom"></div>
+</div>
+
+</body>
+</html>

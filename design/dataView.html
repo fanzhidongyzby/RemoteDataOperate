@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>数据查询</title>
+<link rel="stylesheet" type="text/css" href="./src/common.css">
+</head>
+<body>
+<div class="top"></div>
+<div class="head">
+	<div class="head_left"></div>
+    <div class="head_middle"><font class="head_txt">&nbsp;数据查询</font></div>
+    <div class="head_right"></div>
+</div>
+<script language="javascript" type="text/javascript">
+function validate()
+{
+	if(document.all.host.value==""
+	||document.all.port.value==""
+	||document.all.dbname.value==""
+	||document.all.user.value==""
+	||document.all.pswd.value==""
+	||document.all.srcPath.value=="")
+	{
+		alert("请补充缺失的登录信息。");
+		return false;
+	}
+	else
+		return true;
+}
+</script>
+<div class="main" >
+<table height="20"></table>
+	<table width="80%" align="center" class="txt">
+	<tr align="left">
+		<td colspan="3">过滤条件：id1=<input id="id1" class="txt" type="text" value=""  onclick="select();"/>
+		<input type="button" id="getData" value="检索" class="txt"/>
+		<input type="button" id="getAllData" value="显示所有数据" class="txt"/>
+		</td>
+		</tr>
+	</table>
+	<table width="80%" align="center" border="1" bordercolor="#999999" style="BORDER-COLLAPSE: collapse" class="txt">
+		<tr align="center" bgcolor="#CCCCCC">
+		<td>id1</td><td>id2</td><td>value</td>
+		</tr>
+		<tr align="center">
+		<td>254</td><td>335</td><td>0.148024</td>
+		</tr>
+		
+	</table>
+	<div align="right" style="margin-right:20px">
+		<button type="button" class="back_btn" onclick="window.location.href='./dataSource.html'"><font class="btn_txt" style=" margin-left:10px;">继续</font></button>
+	</div>
+	<br />
+	<div class="bottom"></div>
+</div>
+
+</body>
+</html>

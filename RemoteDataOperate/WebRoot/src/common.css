@@ -1,0 +1,47 @@
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TD {
+	FONT-SIZE: 12px; FONT-FAMILY: Î¢ÈíÑÅºÚ
+}
+DIV {
+	FONT-SIZE: 12px; FONT-FAMILY: Ó×Ô²
+}
+P {
+	FONT-SIZE: 12px; FONT-FAMILY: Ó×Ô²
+}
+SPAN {
+	FONT-SIZE: 12px; FONT-FAMILY: Ó×Ô²
+}
+A {
+	FONT-SIZE: 12px; FONT-FAMILY: Ó×Ô²
+}
+INPUT {
+	FONT-SIZE: 12px; FONT-FAMILY: Ó×Ô²
+}
+TEXTAREA {
+	FONT-SIZE: 12px; FONT-FAMILY: Ó×Ô²
+}
+SELECT {
+	FONT-SIZE: 12px; FONT-FAMILY: Ó×Ô²
+}
+.top{width:802px;height:78px;margin:0 auto;}
+.head{clear:both; background:url(./repeat.png) repeat-x 0 0;height:47px;line-height:45px;font-weight:bold;overflow:hidden;width:806px;margin:0 auto;font-size:14px;}
+.head_left{float:left;width:8px;height:47px; background:url(./bd.png) 0 0 no-repeat}
+.head_middle{float:left; margin-left:10px;width:236px;background:url(./repeat.png) 0 0 repeat-x;height:47px}
+.head_right{float:right;width:8px;height:47px; background:url(./bd.png) -8px 0 no-repeat}
+.head_txt{font-size:20px; font-family:"Ó×Ô²";color:#ffffff;}
+
+.main{width:806px; margin:0 auto ; background:url(./repeat1.png) 0 0 repeat-y; border-bottom:none; clear:both}
+.bottom{background:url(./bottom.png) 0 0 no-repeat;height:9px;;font-size:1px;line-height:1px;}
+
+.button{ background:url(./button.png) 0 0 no-repeat; width:133px; height:37px; display:block; margin-top:20px;border:none; cursor:pointer}
+.back_btn{ background:url(./back.png) 0 0 no-repeat; width:133px; height:37px; display:block; margin-top:20px;border:none; cursor:pointer}
+.btn_txt{font-size:20px; font-family:"Ó×Ô²";color:#ffffff;}
+.tbleft{ font-family:Ó×Ô²; text-align:right}
+.tbright{ font-family:Ó×Ô²; text-align:left;}
+.txt{font-family:Ó×Ô²; }
+
+
+
+
